@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop HELA</title>
-    <link rel="icon" href="/workshop.jpg">
+    <link rel="icon" href="workshop.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="text-align: center; background-color: #ff9e9e;">
+    <header >
         <nav>
-            <a href="#accueil">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#apropos">à propos</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#travail">Travail</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#cv">CV</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#contact">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">à propos</a>
+            <a href="#travail">Travail</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     
@@ -24,7 +25,7 @@
             <h2>Accueil</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi sunt vero natus. Voluptatem molestias eaque error. Nobis ea, ullam eligendi tenetur ipsam distinctio officiis magnam voluptates hic corporis, suscipit atque.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos expedita cupiditate veritatis, porro eaque voluptatibus dignissimos officiis, molestias ducimus ratione inventore id quibusdam incidunt eum? Aperiam minus necessitatibus est id.</p>
-            <table border="1px solid red" >
+            <table  >
                 <tr>
                     <th>Nom</th>
                     <th>Profession</th>
@@ -45,10 +46,13 @@
             <h2>A propos</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ipsum magni omnis quaerat, velit fugit labore aliquam! Iure veniam aspernatur corporis, ex voluptatum eaque facere repellat laudantium molestias nisi eligendi!</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, dolore possimus asperiores adipisci quod sunt excepturi sit mollitia praesentium enim rem animi labore nostrum, architecto vitae quas vel illo aperiam.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore earum maiores obcaecati magnam unde, perspiciatis deleniti libero temporibus consequatur ut aperiam excepturi modi illum qui quod iure in, voluptas odio?</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quasi recusandae eius, ex aliquid cumque. Corrupti sequi amet doloribus accusantium non, minus excepturi fuga odit quae, impedit deserunt cum fugiat.</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore earum maiores obcaecati magnam unde, perspiciatis deleniti libero temporibus consequatur ut aperiam excepturi modi illum qui quod iure in, voluptas odio?</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quasi recusandae eius, ex aliquid cumque. Corrupti sequi amet doloribus accusantium non, minus excepturi fuga odit quae, impedit deserunt cum fugiat.</li>
+                </ul>
+                <video controls src="_It's a match_ _ L'opportunité de recrutement pour les étudiants de GOMYCODE_.mp4"></video>
+            </div>
             <ol>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur vitae aliquam voluptate, fugiat, sint assumenda voluptatum eveniet itaque est atque laborum, veritatis libero! Necessitatibus quisquam illum debitis corrupti praesentium.</li>
             </ol>
@@ -56,31 +60,30 @@
                 <dt>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, sequi iusto? Aperiam non ut assumenda sint? Numquam dicta, nihil, maxime in assumenda odit illum voluptatibus illo veritatis natus alias esse?</dt>
                 <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum necessitatibus dolor asperiores eveniet non voluptatibus quaerat inventore qui. Quasi, magni maxime. Expedita itaque ut cumque alias debitis reprehenderit, minus sed.</dd>
             </dl>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/drHbXuvWfzM?si=kakZ_ZcXyFEAWkRy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         </section>
         <section id="travail">
             <h2>Travail</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex officiis facilis minus vero blanditiis modi hic quam, sunt excepturi enim rerum. Odit ipsam laudantium suscipit minus at, iste tempore eius.</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, adipisci odit distinctio minus hic, eius eum veniam praesentium, vero nam molestias suscipit tempora sed iste pariatur repellat accusamus corporis reiciendis.</p>
-            <img src="image accueil.avif" alt="img accueil">
+            <img src="image accueil.avif" alt="img accueil" class="imgc">
         </section>
         <section id="cv">
             <h2>CV</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quod nostrum officiis tenetur hic quisquam eum, ratione porro blanditiis illum quae, explicabo, excepturi rerum facilis sit. Tempore voluptates quidem officia.
             </p>
-            <img src="cv.jpg" alt="img accueil">
+            <img src="cv.jpg" alt="img cv" class="imgc">
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form >
+            <form class="form">
                 <label >Prenom</label>
                 <input type="text" >
                 <br><br>
                 
                 <label >Nom</label>
-                <input type="text" >
+                <input type="text" id="input_nom">
                 <br><br>
 
                 <label >Pays</label>
@@ -91,7 +94,7 @@
                 </select>
                 <br><br>
             
-                <label >Objet</label>
+                <label >Objet</label><br>
                 <textarea ></textarea>
                 <br><br>
             
@@ -101,10 +104,7 @@
 
     </main>
 <br>
-    <footer style="text-align: center;
-    padding: 5px;
-    background-color: #abbaba;
-    color: #000;">
+    <footer >
         <small>Copyright © 2023 Littérature.com. Tous droits réservés.</small>
 
 
